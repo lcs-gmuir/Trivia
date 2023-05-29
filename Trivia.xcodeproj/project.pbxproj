@@ -46,7 +46,6 @@
 		984A69B829FBB433001123A3 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				985756102A2422640065E32F /* db (1).sqlite */,
 				9857560B2A2421030065E32F /* AppDatabase.swift */,
 			);
 			path = Helpers;
@@ -57,6 +56,7 @@
 			children = (
 				984A69BC29FBB772001123A3 /* Advice.swift */,
 				984A69C229FBB9C0001123A3 /* SearchResult.swift */,
+				985756102A2422640065E32F /* db (1).sqlite */,
 			);
 			path = Model;
 			sourceTree = "<group>";

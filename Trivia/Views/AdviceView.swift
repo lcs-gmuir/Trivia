@@ -4,13 +4,13 @@
 //
 //  Created by Samantha Stewart on 2023-04-21.
 //
-
+import Blackbird
 import SwiftUI
 
 
 struct AdviceView: View {
     
-    
+    @Environment(\.blackbirdDatabase) var db: Blackbird.Database?
     
     @State var adviceOpacity = 0.0
     @State var currentAdvice: Advice?
@@ -58,6 +58,26 @@ struct AdviceView: View {
                         .background(Color.blue)
                         .cornerRadius(10)
                 })
+                Button(action: {
+                                   Task{
+                                       if let currentAdvice = currentAdvice{
+                                           try await db!.transaction { core in
+                                               try core.query("INSERT INTO Advice (advice, id) VALUES (?, ?)",
+                                                              currentAdvice.advice,
+                                                              currentAdvice.id)
+                                           }
+                                       }
+                                   }
+                                          
+                                      }) {
+                                          Text("Save Advice")
+                                              .font(.caption)
+                                              .bold()
+                                              .padding()
+                                              .foregroundColor(.white)
+                                              .background(Color.blue)
+                                              .cornerRadius(10)
+                                      }
                 
                 
                 
