@@ -11,7 +11,20 @@ import SwiftUI
 struct TriviaApp: App {
     var body: some Scene {
         WindowGroup {
-            AdviceView()
+            TabView{
+                AdviceView()
+                    .tabItem{
+                        Label("Advice", systemImage: "person.crop.circle.fill.badge.checkmark")
+                        
+                    }
+                AdviceView()
+                    .tabItem{
+                        Label("Saved", systemImage: "star.fill")
+                        
+                    }
+            }
+            .environment(\.blackbirdDatabase, AppDatabase.instance)
+            
         }
     }
 }

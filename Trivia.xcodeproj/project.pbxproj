@@ -16,6 +16,8 @@
 		9851BBA129F1727900F9C72B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9851BBA029F1727900F9C72B /* Preview Assets.xcassets */; };
 		9857560C2A2421030065E32F /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9857560B2A2421030065E32F /* AppDatabase.swift */; };
 		9857560F2A2421680065E32F /* Blackbird in Frameworks */ = {isa = PBXBuildFile; productRef = 9857560E2A2421680065E32F /* Blackbird */; };
+		985756122A2426710065E32F /* SavedAdvice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985756112A2426710065E32F /* SavedAdvice.swift */; };
+		985756142A24276A0065E32F /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 985756132A24276A0065E32F /* db.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +30,8 @@
 		9851BB9D29F1727800F9C72B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9851BBA029F1727900F9C72B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9857560B2A2421030065E32F /* AppDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
-		985756102A2422640065E32F /* db (1).sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "db (1).sqlite"; sourceTree = "<group>"; };
+		985756112A2426710065E32F /* SavedAdvice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedAdvice.swift; sourceTree = "<group>"; };
+		985756132A24276A0065E32F /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +57,9 @@
 		984A69B929FBB444001123A3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				985756132A24276A0065E32F /* db.sqlite */,
 				984A69BC29FBB772001123A3 /* Advice.swift */,
 				984A69C229FBB9C0001123A3 /* SearchResult.swift */,
-				985756102A2422640065E32F /* db (1).sqlite */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -73,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				984A69C029FBB7D6001123A3 /* AdviceView.swift */,
+				985756112A2426710065E32F /* SavedAdvice.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9851BBA129F1727900F9C72B /* Preview Assets.xcassets in Resources */,
+				985756142A24276A0065E32F /* db.sqlite in Resources */,
 				9851BB9E29F1727800F9C72B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,6 +199,7 @@
 				9857560C2A2421030065E32F /* AppDatabase.swift in Sources */,
 				984A69BF29FBB7A2001123A3 /* NetworkService .swift in Sources */,
 				984A69C129FBB7D6001123A3 /* AdviceView.swift in Sources */,
+				985756122A2426710065E32F /* SavedAdvice.swift in Sources */,
 				984A69C329FBB9C0001123A3 /* SearchResult.swift in Sources */,
 				984A69BD29FBB772001123A3 /* Advice.swift in Sources */,
 				9851BB9A29F1727400F9C72B /* adviceApp.swift in Sources */,
