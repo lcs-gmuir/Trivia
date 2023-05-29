@@ -14,12 +14,12 @@ struct TriviaApp: App {
             TabView{
                 AdviceView()
                     .tabItem{
-                        Label("Advice", systemImage: "person.crop.circle.fill.badge.checkmark")
+                        Label("Advice", systemImage: "square.and.pencil.circle.fill")
                         
                     }
-                AdviceView()
+                SavedAdvice()
                     .tabItem{
-                        Label("Saved", systemImage: "star.fill")
+                        Label("Saved", systemImage: "square.and.arrow.down")
                         
                     }
             }
